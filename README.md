@@ -29,7 +29,7 @@ Then visit `http://localhost:8000`.
 4. Under **Build and deployment**, set **Source** to `Deploy from a branch`, choose the `main` branch and `/ (root)` folder, then click **Save**.
 5. Wait a minute, then your site will be live at:
    ```
-   https://<your-username>.github.io/<repo-name>/
+   
    ```
 
 ## Customizing
