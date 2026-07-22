@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harshad Jamdar — Systems &amp; Software Engineer</title>
+<meta name="description" content="Portfolio of Harshad Jamdar, Computer Science Engineering student specializing in Java, ERP systems, databases and applied generative AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- coordinate readout -->
+<div class="coord-readout" id="coordReadout" aria-hidden="true">
+  <span>X <em id="coordX">000</em></span>
+  <span>Y <em id="coordY">000</em></span>
+  <span class="coord-sheet">SHEET <em id="coordSheet">01</em>/06</span>
+</div>
+
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav-mark">HJ<span>.</span></a>
+  <nav class="nav-links">
+    <a href="#profile"><span class="idx">01</span>Profile</a>
+    <a href="#bom"><span class="idx">02</span>Capabilities</a>
+    <a href="#projects"><span class="idx">03</span>Projects</a>
+    <a href="#experience"><span class="idx">04</span>Experience</a>
+    <a href="#activity"><span class="idx">05</span>Activity</a>
+    <a href="#contact"><span class="idx">06</span>Contact</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-frame">
+    <div class="frame-corner tl"></div>
+    <div class="frame-corner tr"></div>
+    <div class="frame-corner bl"></div>
+    <div class="frame-corner br"></div>
+
+    <p class="hero-eyebrow reveal-line">DRAWING SET — PERSONAL PORTFOLIO — REV. 2026</p>
+
+    <h1 class="hero-title">
+      <span class="reveal-up" style="--d:0">HARSHAD</span>
+      <span class="reveal-up" style="--d:1">JAMDAR</span>
+    </h1>
+
+    <p class="hero-role reveal-up" style="--d:2">Computer Science Engineering Student — Java Systems, Databases &amp; Applied Generative AI</p>
+
+    <div class="hero-meta reveal-up" style="--d:3">
+      <span>KARAD, MAHARASHTRA, IN</span>
+      <span class="dot">•</span>
+      <span>B.TECH CSE — EXPECTED 2027</span>
+      <span class="dot">•</span>
+      <span>EN · HI · MR · DE</span>
+    </div>
+
+    <div class="hero-cta reveal-up" style="--d:4">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+    </div>
+  </div>
+
+  <div class="hero-schematic" aria-hidden="true">
+    <svg viewBox="0 0 640 640" fill="none" xmlns="http://www.w3.org/2000/svg" id="schematicSvg">
+      <!-- connecting lines -->
+      <g class="schematic-lines" stroke="var(--line)" stroke-width="1.4" stroke-linecap="round">
+        <path d="M320 320 L150 150" />
+        <path d="M320 320 L490 150" />
+        <path d="M320 320 L150 490" />
+        <path d="M320 320 L490 490" />
+        <path d="M320 320 L320 90" />
+        <path d="M320 320 L320 550" />
+      </g>
+      <!-- nodes -->
+      <g class="schematic-nodes">
+        <circle cx="320" cy="320" r="34" class="node-core"/>
+        <text x="320" y="325" text-anchor="middle" class="node-core-label">CS</text>
+
+        <g class="node" transform="translate(150,150)">
+          <rect x="-42" y="-20" width="84" height="40" rx="3"/>
+          <text text-anchor="middle" y="5">JAVA</text>
+        </g>
+        <g class="node" transform="translate(490,150)">
+          <rect x="-46" y="-20" width="92" height="40" rx="3"/>
+          <text text-anchor="middle" y="5">MYSQL</text>
+        </g>
+        <g class="node" transform="translate(150,490)">
+          <rect x="-38" y="-20" width="76" height="40" rx="3"/>
+          <text text-anchor="middle" y="5">ERP</text>
+        </g>
+        <g class="node" transform="translate(490,490)">
+          <rect x="-34" y="-20" width="68" height="40" rx="3"/>
+          <text text-anchor="middle" y="5">AI</text>
+        </g>
+        <g class="node" transform="translate(320,90)">
+          <rect x="-52" y="-20" width="104" height="40" rx="3"/>
+          <text text-anchor="middle" y="5">SWING</text>
+        </g>
+        <g class="node" transform="translate(320,550)">
+          <rect x="-40" y="-20" width="80" height="40" rx="3"/>
+          <text text-anchor="middle" y="5">JDBC</text>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <div class="scroll-cue" aria-hidden="true"><span></span>SCROLL</div>
+</section>
+
+<main>
+
+  <!-- 01 PROFILE -->
+  <section class="sheet" id="profile">
+    <div class="sheet-head reveal">
+      <span class="sheet-num">01</span>
+      <h2>Profile</h2>
+      <span class="sheet-line"></span>
+    </div>
+    <div class="profile-grid">
+      <p class="profile-text reveal">
+        Motivated and detail-oriented Computer Science Engineering student with hands-on experience in
+        Java development, database management, ERP systems, and desktop application development.
+        Proficient in AI tools and generative AI integration for real-world project development —
+        with strong logical understanding and problem-solving skills that extend beyond writing code
+        into designing and executing realistic, scalable systems.
+      </p>
+      <div class="profile-facts reveal">
+        <div class="fact">
+          <span class="fact-label">Rapid Learning</span>
+          <span class="fact-body">Grasps new technologies and frameworks quickly, applying them directly to production-grade work.</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Systems Thinking</span>
+          <span class="fact-body">Connects technical solutions to real business needs — from schema design to end-user workflow.</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label">AI Integration</span>
+          <span class="fact-body">Applies LLM-based tooling and prompt engineering to accelerate development and build intelligent features.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="education-block reveal">
+      <div class="edu-marker">EDU</div>
+      <div class="edu-body">
+        <h3>Bachelor of Technology, Computer Science &amp; Engineering</h3>
+        <p>Annasaheb Dange College of Engineering, Ashta, Maharashtra — Expected 2027</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 BILL OF MATERIALS / SKILLS -->
+  <section class="sheet sheet-dark" id="bom">
+    <div class="sheet-head reveal">
+      <span class="sheet-num">02</span>
+      <h2>Capabilities</h2>
+      <span class="sheet-line"></span>
+    </div>
+    <p class="sheet-sub reveal">Bill of materials — the languages, tools and concepts assembled into every build.</p>
+
+    <div class="bom-table reveal" role="table" aria-label="Skills bill of materials">
+      <div class="bom-row bom-head" role="row">
+        <span role="columnheader">ITEM</span>
+        <span role="columnheader">COMPONENT</span>
+        <span role="columnheader">CATEGORY</span>
+      </div>
+      <!-- rows injected... static for reliability -->
+      <div class="bom-row" role="row"><span>01</span><span>Java</span><span>Language</span></div>
+      <div class="bom-row" role="row"><span>02</span><span>Python</span><span>Language</span></div>
+      <div class="bom-row" role="row"><span>03</span><span>JavaScript</span><span>Language</span></div>
+      <div class="bom-row" role="row"><span>04</span><span>C++</span><span>Language</span></div>
+      <div class="bom-row" role="row"><span>05</span><span>SQL</span><span>Language</span></div>
+      <div class="bom-row" role="row"><span>06</span><span>HTML / CSS</span><span>Web</span></div>
+      <div class="bom-row" role="row"><span>07</span><span>MySQL</span><span>Database</span></div>
+      <div class="bom-row" role="row"><span>08</span><span>MongoDB</span><span>Database</span></div>
+      <div class="bom-row" role="row"><span>09</span><span>JDBC</span><span>Framework</span></div>
+      <div class="bom-row" role="row"><span>10</span><span>Java Swing</span><span>Framework</span></div>
+      <div class="bom-row" role="row"><span>11</span><span>Git</span><span>Tooling</span></div>
+      <div class="bom-row" role="row"><span>12</span><span>Generative AI / LLM Tooling</span><span>AI</span></div>
+      <div class="bom-row" role="row"><span>13</span><span>Prompt Engineering</span><span>AI</span></div>
+      <div class="bom-row" role="row"><span>14</span><span>OOP · DBMS · Data Structures</span><span>Core CS</span></div>
+      <div class="bom-row" role="row"><span>15</span><span>ERP Systems &amp; System Design</span><span>Core CS</span></div>
+    </div>
+  </section>
+
+  <!-- 03 PROJECTS -->
+  <section class="sheet" id="projects">
+    <div class="sheet-head reveal">
+      <span class="sheet-num">03</span>
+      <h2>Projects</h2>
+      <span class="sheet-line"></span>
+    </div>
+
+    <div class="project-list">
+
+      <article class="titleblock reveal">
+        <div class="tb-top">
+          <h3>Multi School ERP Management System</h3>
+          <span class="tb-status status-live">SPONSORED · COMPLETED</span>
+        </div>
+        <p class="tb-desc">
+          Industry-sponsored ERP platform unifying multiple schools under one system, covering student
+          records, fee management, attendance tracking, transport and report generation with a scalable,
+          modular architecture built for daily administrative operations.
+        </p>
+        <div class="tb-fields">
+          <div class="tb-field"><span>STACK</span><strong>Java · MySQL · Swing · JDBC</strong></div>
+          <div class="tb-field"><span>ROLE</span><strong>Developer</strong></div>
+          <div class="tb-field"><span>STATUS</span><strong>Delivered / Production</strong></div>
+        </div>
+      </article>
+
+      <article class="titleblock reveal">
+        <div class="tb-top">
+          <h3>Library Management System</h3>
+          <span class="tb-status">2025</span>
+        </div>
+        <p class="tb-desc">
+          Desktop application handling book issue/return and full inventory management, backed by a
+          MySQL database via JDBC connectivity and a responsive Java Swing interface.
+        </p>
+        <div class="tb-fields">
+          <div class="tb-field"><span>STACK</span><strong>Java · Swing · JDBC · MySQL</strong></div>
+          <div class="tb-field"><span>ROLE</span><strong>Developer</strong></div>
+          <div class="tb-field"><span>STATUS</span><strong>Complete</strong></div>
+        </div>
+      </article>
+
+      <article class="titleblock reveal">
+        <div class="tb-top">
+          <h3>Bus Reservation System</h3>
+          <span class="tb-status">2024</span>
+        </div>
+        <p class="tb-desc">
+          Booking and reservation management application for bus services, handling seat allocation
+          and reservation logic end to end.
+        </p>
+        <div class="tb-fields">
+          <div class="tb-field"><span>STACK</span><strong>C</strong></div>
+          <div class="tb-field"><span>ROLE</span><strong>Developer</strong></div>
+          <div class="tb-field"><span>STATUS</span><strong>Complete</strong></div>
+        </div>
+      </article>
+
+      <article class="titleblock reveal">
+        <div class="tb-top">
+          <h3>Traffic Management System</h3>
+          <span class="tb-status">2024</span>
+        </div>
+        <p class="tb-desc">
+          System focused on traffic flow optimization and urban congestion reduction, modelling
+          signal logic to ease intersection bottlenecks.
+        </p>
+        <div class="tb-fields">
+          <div class="tb-field"><span>STACK</span><strong>C++</strong></div>
+          <div class="tb-field"><span>ROLE</span><strong>Developer</strong></div>
+          <div class="tb-field"><span>STATUS</span><strong>Complete</strong></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 04 EXPERIENCE -->
+  <section class="sheet sheet-dark" id="experience">
+    <div class="sheet-head reveal">
+      <span class="sheet-num">04</span>
+      <h2>Experience</h2>
+      <span class="sheet-line"></span>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-body">
+          <h3>Android Development Intern</h3>
+          <p class="timeline-org">Mobile Application Development</p>
+          <ul>
+            <li>Worked on Android application development concepts and mobile UI design.</li>
+            <li>Assisted in debugging, testing and implementation of app features.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 ACTIVITY (paper contrast card) -->
+  <section class="sheet" id="activity">
+    <div class="sheet-head reveal">
+      <span class="sheet-num">05</span>
+      <h2>Activity</h2>
+      <span class="sheet-line"></span>
+    </div>
+
+    <div class="field-note reveal">
+      <div class="pin"></div>
+      <p class="note-kicker">FIELD NOTE — OFF THE DESK</p>
+      <h3>Badminton — Inter-Zonal Player</h3>
+      <p>
+        Represented at Zonal and Inter-Zonal levels in competitive badminton tournaments, including the
+        Shivaji University Lead College tournament, and competed across multiple university and
+        state-level events — discipline and competitive spirit carried straight into the way projects
+        get built.
+      </p>
+    </div>
+  </section>
+
+  <!-- 06 CONTACT -->
+  <section class="sheet contact-sheet" id="contact">
+    <div class="sheet-head reveal">
+      <span class="sheet-num">06</span>
+      <h2>Contact</h2>
+      <span class="sheet-line"></span>
+    </div>
+
+    <div class="contact-block reveal">
+      <p class="contact-intro">Open to opportunities in backend development, ERP engineering and AI-integrated software.</p>
+      <div class="contact-fields">
+        <a class="contact-field" href="mailto:harshadjamdar1217@gmail.com">
+          <span>EMAIL</span>
+          <strong>harshadjamdar1217@gmail.com</strong>
+        </a>
+        <a class="contact-field" href="tel:+917799243824">
+          <span>PHONE</span>
+          <strong>+91-7799243824</strong>
+        </a>
+        <a class="contact-field" href="https://linkedin.com/in/harsh-jamdar11217" target="_blank" rel="noopener">
+          <span>LINKEDIN</span>
+          <strong>linkedin.com/in/harsh-jamdar11217</strong>
+        </a>
+        <div class="contact-field">
+          <span>LOCATION</span>
+          <strong>Karad, Maharashtra, India</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-tb">
+    <span>DRAWN BY: H. JAMDAR</span>
+    <span>SCALE: 1:1</span>
+    <span>REV: 2026.07</span>
+    <span>SHEET 06 OF 06</span>
+  </div>
+  <p>&copy; <span id="year"></span> Harshad Jamdar. Built with HTML, CSS &amp; JavaScript.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
